@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .h3-line {
+            display: flex;
+            flex-direction: column;
+            width: 80%; 
+            margin-bottom: 120px; 
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 10cm;
+            margin-left: 40px; 
+        }
+        img {
+            width: 7cm;
+            height: 7cm;
+            object-fit: cover;
+        }
+        h2 {
+            margin-right: 20%;
+        }
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+        .paragraph-container {
+            text-align: center;
+            margin: 10px;
+            margin-left: 60px;
+            margin-right: 30%;
+        }
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        button {
+            margin-bottom: 20px;
+            align-self: flex-start;
+            margin-left: 4.3mm;
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        .h3-inline {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<h1 data-en="Moon:" data-ar="القمر:">Moon:</h1>
+    <h2 data-en="an object that orbits a planet or something else that is not a star. Besides planets, moons can circle dwarf planets, large asteroids, and other bodies." data-ar="جسم يدور حول كوكب أو شيء آخر ليس نجمًا. إلى جانب الكواكب ، يمكن للأقمار أن تدور حول الكواكب القزمة والكويكبات الكبيرة وغيرها من الأجسام.">an object that orbits a planet or something else that is not a star. Besides planets, moons can circle dwarf planets, large asteroids, and other bodies.</h2>
+    <button onclick="toggleDarkMode()" data-en="Toggle Dark/light Mode" data-ar="تبديل الوضع الداكن / الخفيف">Toggle Dark/light Mode</button>
+    <button onclick="toggleLanguage()" data-en="Toggle Language" data-ar="تبديل اللغة">Toggle Language</button>
+    <div class="h3-line">
+        <div class="image-row">
+            <div class="h3-inline">
+                <div class="image-container">
+                    <h3 data-en="Luna AKA: The Mooon" data-ar="لونا الملقبة: القمر">Luna AKA: The Mooon</h3>
+                    <img src="https://media1.giphy.com/media/aN9GqoR7OD3nq/giphy.gif">
+                    <div class="paragraph-container">
+                        <p data-en="The Moon, Earth's only natural satellite, orbits 384,400 km away, presenting the same face due to gravitational forces. Its lunar day matches the lunar month at 29.5 Earth days." data-ar="القمر ، القمر الطبيعي الوحيد للأرض ، يدور على بعد 384،400 كم ، مقدمًا نفس الوجه بسبب القوى الجاذبية. يتطابق يومه القمري مع شهره القمري بـ 29.5 يومًا أرضيًا.">The Moon, Earth's only natural satellite, orbits 384,400 km away, presenting the same face due to gravitational forces. Its lunar day matches the lunar month at 29.5 Earth days.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <h3 data-en="Phobos" data-ar="فوبوس">Phobos</h3>
+                    <img src="https://static.wikia.nocookie.net/se-database/images/d/da/Phobos-main.png/revision/latest/thumbnail/width/360/height/360?cb=20230409053330">
+                    <div class="paragraph-container">
+                        <p data-en="Phobos is the larger of Mars' two natural satellites, discovered in 1877 by astronomer Asaph Hall. It is named after the Greek god of fear and panic, who is the son of Ares and the twin brother of Deimos, the other moon of Mars." data-ar="فوبوس هو الأكبر من بين قمري المريخ الطبيعيين ، اكتشفه عالم الفلك آساف هول في عام 1877. وهو يأخذ اسمه من الإله اليوناني للخوف والهلع ، الذي هو ابن آريس والأخ التوأم لديموس ، القمر الآخر للمريخ.">Phobos is the larger of Mars' two natural satellites, discovered in 1877 by astronomer Asaph Hall. It is named after the Greek god of fear and panic, who is the son of Ares and the twin brother of Deimos, the other moon of Mars.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-row">
+            <div class="h3-inline">
+                <div class="image-container">
+                    <h3 data-en="Deimos" data-ar="ديموس">Deimos</h3>
+                    <img src="https://p.turbosquid.com/ts-thumb/vb/9VWBms/gz/deimos/png/1614794199/1920x1080/turn_fit_q99/2899bbaa8dda68a84a5de1e1958ae396366a1e3a/deimos-1.jpg">
+                    <div class="paragraph-container">
+                        <p data-en="Deimos is the smaller and outer of Mars' two moons, with a mean radius of 6.2 km and an orbital period of 30.3 hours. Positioned 23,460 km from Mars, it is farther away compared to its counterpart, Phobos." data-ar="ديموس هو القمر الأصغر والأخير لقمري المريخ ، بنصف قطر متوسط ​​بلغ 6.2 كم وفترة مدارية قدرها 30.3 ساعة. يقع على بعد 23،460 كم من المريخ ، وهو أبعد مقارنة بنظيره فوبوس.">Deimos is the smaller and outer of Mars' two moons, with a mean radius of 6.2 km and an orbital period of 30.3 hours. Positioned 23,460 km from Mars, it is farther away compared to its counterpart, Phobos.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <h3 data-en="Europa" data-ar="أوروبا">Europa</h3>
+                    <img src="https://static.independent.co.uk/2022/03/29/12/newFile-3.jpg?width=1200&height=1200&fit=crop">
+                    <div class="paragraph-container">
+                        <p data-en="Europa, or Jupiter II, is the smallest of the four Galilean moons orbiting Jupiter, and the sixth-closest to the planet of all the 95 known moons of Jupiter. It is also the sixth-largest moon in the Solar System." data-ar="أوروبا ، أو الكوكبة الثانية للمشتري ، هي أصغر الأقمار الأربعة الجاليليين الدائرة حول المشتري ، وهي السادسة الأقرب إلى الكوكب من بين جميع الأقمار المعروفة للمشتري البالغ عددها 95. إنها أيضًا سادس أكبر قمر في النظام الشمسي.">Europa, or Jupiter II, is the smallest of the four Galilean moons orbiting Jupiter, and the sixth-closest to the planet of all the 95 known moons of Jupiter. It is also the sixth-largest moon in the Solar System.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-row">
+    <div class="h3-inline">
+        <div class="image-container">
+            <h3 data-en="Io" data-ar="أيو">Io</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Io_highest_resolution_true_color.jpg">
+            <div class="paragraph-container">
+                <p data-en="Io, or Jupiter I, is the innermost and third-largest of the four Galilean moons of the planet Jupiter" data-ar="أيو ، أو المشتري الأول ، هو الأقرب والثالث الأكبر من بين أربعة أقمار جاليليان لكوكب المشتري">Io, or Jupiter I, is the innermost and third-largest of the four Galilean moons of the planet Jupiter</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <h3 data-en="Ganymede" data-ar="جانيميد">Ganymede</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Moon_Ganymede_by_NOAA.jpg/220px-Moon_Ganymede_by_NOAA.jpg">
+            <div class="paragraph-container">
+                <p data-en="Ganymede, or Jupiter III, is the largest and most massive natural satellite of Jupiter as well as the largest in the Solar System, being a planetary-mass moon. It is the largest Solar System object without an atmosphere, despite being the only moon in the Solar System with a substantial magnetic field." data-ar="جانيميد ، أو المشتري الثالث ، هو أكبر وأضخم الأقمار الطبيعية للمشتري وكذلك الأكبر في النظام الشمسي ، كونه قمرًا بكتلة كوكبية. إنه أكبر جسم في النظام الشمسي بدون غلاف جوي ، على الرغم من أنه هو القمر الوحيد في النظام الشمسي الذي يحتوي على حقل مغناطيسي كبير.">Ganymede, or Jupiter III, is the largest and most massive natural satellite of Jupiter as well as the largest in the Solar System, being a planetary-mass moon. It is the largest Solar System object without an atmosphere, despite being the only moon in the Solar System with a substantial magnetic field.</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="image-row">
+        <div class="h3-inline">
+            <div class="image-container">
+                <h3 data-en="Callisto" data-ar="كاليستو">Callisto</h3>
+                <img src="https://solarsystem.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWdFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--11f06402c8b9af7adfa6de17254654059b410e60/PIA03456_thumb.jpg?disposition=inline">
+                <div class="paragraph-container">
+                    <p data-en="Callisto, or Jupiter IV, is the second-largest moon of Jupiter, after Ganymede. In the Solar System, it is the third-largest moon after Ganymede and Saturn's largest moon Titan, and as large as the smallest planet Mercury, though only about a third as massive." data-ar="كاليستو ، أو المشتري الرابع ، هو ثاني أكبر قمر للمشتري ، بعد جانيميد. في النظام الشمسي ، إنه ثالث أكبر قمر بعد جانيميد وأكبر قمر لزحل تايتان ، وبحجم الكوكب الصغير عطارد ، على الرغم من أن كتلته تشبه حوالي الثلث من الكتلة.">Callisto, or Jupiter IV, is the second-largest moon of Jupiter, after Ganymede. In the Solar System, it is the third-largest moon after Ganymede and Saturn's largest moon Titan, and as large as the smallest planet Mercury, though only about a third as massive.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-en="Titan" data-ar="تيتان">Titan</h3>
+                <img src="https://revistapesquisa.fapesp.br/wp-content/uploads/2022/01/SITE_CreteraTita-2-1140.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Titan is the largest moon of Saturn and the second-largest in the Solar System, larger than any of the dwarf planets of the Solar System." data-ar="تيتان هو أكبر قمر لزحل وثاني أكبر قمر في النظام الشمسي ، أكبر من أي كوكب قزم في النظام الشمسي.">Titan is the largest moon of Saturn and the second-largest in the Solar System, larger than any of the dwarf planets of the Solar System.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="h3-inline">
+            <div class="image-container">
+                <h3 data-en="Dione" data-ar="ديون">Dione</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Dione_in_natural_light_%28cropped%29.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Dione, also designated Saturn IV, is the fourth-largest moon of Saturn. Its trailing hemisphere is marked by large ice cliffs called chasmata and is also darkened compared to the leading hemisphere." data-ar="ديون ، المعين أيضا كزحل الرابع ، هو رابع أكبر قمر لزحل. يتميز نصفه الخلفي بصخور جليدية كبيرة تسمى شاسماتا ، ويظل أيضًا مظلمًا بالمقارنة مع النصف الأمامي.">Dione, also designated Saturn IV, is the fourth-largest moon of Saturn. Its trailing hemisphere is marked by large ice cliffs called chasmata and is also darkened compared to the leading hemisphere.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-en="Mimas" data-ar="ميماس">Mimas</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mimas_Cassini.jpg/1200px-Mimas_Cassini.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Mimas, also known as Saturn I, is a moon of Saturn with the second-largest crater in the Solar System, named Herschel. This crater, measuring 139 kilometers across, is about one-third of Mimas's average diameter and is thought to have formed from a highly energetic impact event." data-ar="ميماس ، المعروف أيضًا باسم زحل الأول ، هو قمر لزحل بثاني أكبر حفرة في النظام الشمسي تحمل اسم هيرشيل. تبلغ قطر هذه الحفرة ، التي يبلغ عرضها 139 كيلومترًا ، حوالي ثلث قطر ميماس الطولي المتوسط ​​ويعتقد أنها شكلت من حدث اصطدام ذو طاقة عالية.">Mimas, also known as Saturn I, is a moon of Saturn with the second-largest crater in the Solar System, named Herschel. This crater, measuring 139 kilometers across, is about one-third of Mimas's average diameter and is thought to have formed from a highly energetic impact event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="image-row">
+        <div class="h3-inline">
+            <div class="image-container">
+                <h3 data-en="Rhea" data-ar="ريا">Rhea</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/PIA07763_Rhea_full_globe5.jpg/1200px-PIA07763_Rhea_full_globe5.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Rhea is Saturn's second-largest moon and the ninth-largest in the Solar System, boasting a surface area similar to Australia. Notably, it is the smallest Solar System object where precise measurements confirm a shape consistent with hydrostatic equilibrium." data-ar="ريا هو ثاني أكبر قمر لزحل وتاسع أكبر قمر في النظام الشمسي ، حيث تتمتع بمساحة سطحية مماثلة لأستراليا. ولاحظ أنه هو أصغر جسم في النظام الشمسي حيث تؤكد القياسات الدقيقة شكلًا متسقًا مع التوازن الهيدروديناميكي.">Rhea is Saturn's second-largest moon and the ninth-largest in the Solar System, boasting a surface area similar to Australia. Notably, it is the smallest Solar System object where precise measurements confirm a shape consistent with hydrostatic equilibrium.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-en="Titania" data-ar="تيتانيا">Titania</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Titania_%28moon%29_color%2C_cropped.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Titania, also designated Uranus III, is the largest of the moons of Uranus and the eighth largest moon in the Solar System at a diameter of 1,578 kilometres, with a surface area comparable to that of Australia." data-ar="تيتانيا ، المعينة أيضا على أنها أورانوس الثالثة ، هي أكبر قمر لأربعة أقمار لأورانوس وثامن أكبر قمر في النظام الشمسي بقطر يبلغ 1،578 كيلومترًا ، وتمتلك مساحة سطحية مقارنة بتلك أستراليا.">Titania, also designated Uranus III, is the largest of the moons of Uranus and the eighth largest moon in the Solar System at a diameter of 1,578 kilometres, with a surface area comparable to that of Australia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="h3-inline">
+            <div class="image-container">
+                <h3 data-en="Miranda" data-ar="ميراندا">Miranda</h3>
+                <img src="https://www.americaspace.com/wp-content/uploads/2015/08/Miranda.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Miranda, also designated Uranus V, is the smallest and innermost of Uranus's five round satellites. It was discovered by Gerard Kuiper on 16 February 1948, at McDonald Observatory in Texas, and named after Miranda from William Shakespeare's play The Tempest." data-ar="ميراندا ، المعينة أيضا كأورانوس الخامس ، هي أصغر وأدنى قمر لخمسة أقمار دائرية لأورانوس. تم اكتشافها بواسطة جيرارد كايبر في 16 فبراير 1948 ، في مرصد ماكدونالد في تكساس ، وأطلق عليها اسم ميراندا من مسرحية ويليام شكسبير "العاصفة".">Miranda, also designated Uranus V, is the smallest and innermost of Uranus's five round satellites. It was discovered by Gerard Kuiper on 16 February 1948, at McDonald Observatory in Texas, and named after Miranda from William Shakespeare's play The Tempest.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-en="Ariel" data-ar="آرييل">Ariel</h3>
+                <img src="https://sos.noaa.gov/ftp_mirror/astronomy/uranus_moons/ariel/media/thumbnail_big.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Ariel is the fourth-largest of the 27 known moons of Uranus. Ariel orbits and rotates in the equatorial plane of Uranus, which is almost perpendicular to the orbit of Uranus and so has an extreme seasonal cycle." data-ar="آرييل هو رابع أكبر بين الأقمار الثلاث والعشرين المعروفة لأورانوس. آرييل تدور حول أورانوس وتدور في المستوى الاستوائي لأورانوس ، والذي يكاد يكون عمودياً على مدار أورانوس ولديه دورة فصلية متطرفة.">Ariel is the fourth-largest of the 27 known moons of Uranus. Ariel orbits and rotates in the equatorial plane of Uranus, which is almost perpendicular to the orbit of Uranus and so has an extreme seasonal cycle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="image-row">
+        <div class="h3-inline">
+            <div class="image-container">
+                <h3 data-en="Triton" data-ar="ترايتون">Triton</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Neptune%E2%80%99s_Moon_Triton_Fosters_Rare_Icy_Union_%28gemini1903a%29_square.jpg/290px-Neptune%E2%80%99s_Moon_Triton_Fosters_Rare_Icy_Union_%28gemini1903a%29_square.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Triton is the largest natural satellite of the planet Neptune and was the first Neptunian moon to be discovered, on October 10, 1846, by English astronomer William Lassell. It is the only large moon in the Solar System with a retrograde orbit, an orbit in the direction opposite to its planet's rotation." data-ar="ترايتون هو أكبر قمر طبيعي لكوكب نبتون وكان أول قمر نبتوني يتم اكتشافه في 10 أكتوبر 1846 ، على يد عالم الفلك الإنجليزي ويليام لاسيل. إنه القمر الكبير الوحيد في النظام الشمسي الذي يحمل مدارًا رجوعيًا ، مدارًا في اتجاه معاكس لدوران كوكبه.">Triton is the largest natural satellite of the planet Neptune and was the first Neptunian moon to be discovered, on October 10, 1846, by English astronomer William Lassell. It is the only large moon in the Solar System with a retrograde orbit, an orbit in the direction opposite to its planet's rotation.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-en="Proteus" data-ar="بروتيوس">Proteus</h3>
+                <img src="https://earthsky.org/upl/2019/02/Proteus-Voyager-2-1989-800x804.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Proteus, also known as Neptune VIII, is the second-largest Neptunian moon and Neptune's largest inner satellite. Discovered by the Voyager 2 spacecraft in 1989, it is named after Proteus, the shape-changing sea god of Greek mythology." data-ar="بروتيوس ، المعروف أيضا باسم نبتون الثامن ، هو ثاني أكبر قمر نبتوني وأكبر قمر داخلي لنبتون. اكتشفته مركبة فويجر 2 في عام 1989 ، وهو يحمل اسم بروتيوس ، إله البحر الذي يتغير شكله في الأساطير اليونانية.">Proteus, also known as Neptune VIII, is the second-largest Neptunian moon and Neptune's largest inner satellite. Discovered by the Voyager 2 spacecraft in 1989, it is named after Proteus, the shape-changing sea god of Greek mythology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+        function toggleLanguage() {
+        const htmlElement = document.documentElement;
+        const currentLanguage = htmlElement.lang;
+
+        if (currentLanguage === 'en') {
+            htmlElement.lang = 'ar';
+        } else {
+            htmlElement.lang = 'en';
+        }
+
+        updateContent();
+    }
+
+    function updateContent() {
+        const elements = document.querySelectorAll('[data-en], [data-ar]');
+
+        elements.forEach(element => {
+            const currentLanguage = document.documentElement.lang;
+            if (currentLanguage === 'ar') {
+                element.textContent = element.getAttribute('data-ar');
+            } else {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+    }
+
+    updateContent();
+</script>
+</body>
+</html>

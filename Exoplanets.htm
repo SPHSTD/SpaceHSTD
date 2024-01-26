@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .h3-line {
+            display: flex;
+            flex-direction: column;
+            width: 80%; 
+            margin-bottom: 140px; 
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 10cm;
+            margin-left: 10px; 
+        }
+        img {
+            width: 7cm;
+            height: 7cm;
+            object-fit: cover;
+        }
+        h2 {
+            margin-right: 20%;
+        }
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+        .paragraph-container {
+            text-align: center;
+            margin: 10px;
+            margin-left: 70px;
+            margin-right: 35%;
+        }
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        button {
+            margin-bottom: 20px;
+            align-self: flex-start;
+            margin-left: 4.3mm;
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="title" data-en="Exoplanet:" data-ar="كوكب خارجي:">Exoplanet:</h1>
+    <h2 id="subtitle" data-en="An Exoplanet is a planet outside our solar system, orbiting a star. Scientists find them by observing changes in the star's behavior."
+        data-ar="الكوكب الخارجي هو كوكب خارج نظامنا الشمسي، يدور حول نجم. يكتشفه العلماء من خلال مراقبة التغييرات في سلوك النجم.">An Exoplanet is a planet outside our solar system, orbiting a star. Scientists find them by observing changes in the star's behavior.</h2>
+    <h4 data-en="More coming soon..." data-ar="المزيد قريباً...">More coming soon...</h4>
+    <button onclick="toggleDarkMode()" data-en="Toggle Dark/light Mode" data-ar="تبديل الوضع الداكن / الخفيف">Toggle Dark/light Mode</button>
+    <button onclick="toggleLanguage()" data-en="Toggle Language" data-ar="تبديل اللغة">Toggle Language</button>
+    <div class="h3-line">
+        <div class="image-row">
+            <div class="image-container">
+                <h3 id="keplerTitle" data-en="Kepler 186f" data-ar="كيبلر 186ف">Kepler 186f</h3>
+                <img src="https://i.ytimg.com/vi/otZgCZTrHR0/hqdefault.jpg">
+                <div class="paragraph-container">
+                    <p id="keplerText" data-en="Kepler-186f is a planet like Earth, found by NASA's Kepler. It orbits a star called Kepler-186 in the Cygnus constellation, about 580 light-years away."
+                        data-ar="كيبلر 186ف هو كوكب مثل الأرض، تم اكتشافه بواسطة كيبلر التابعة لوكالة ناسا. يدور حول نجم يسمى كيبلر 186 في كوكبة الدجاجة، على بعد حوالي 580 سنة ضوئية.">Kepler-186f is a planet like Earth, found by NASA's Kepler. It orbits a star called Kepler-186 in the Cygnus constellation, about 580 light-years away.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 id="draconisTitle" data-en="42 Draconis b" data-ar="42 دراكونيس ب">42 Draconis b</h3>
+                <img src="https://i.seadn.io/gae/WwDtIhjq-myxqmi6jyeRhxY_23Qx4cC_U4o1p39NiiSd-dZLhJXR5-ejvnkD4L9Z6YRtKd2Itvugli9oO5exLFXhqSaR84obD2BCWGY?auto=format&dpr=1&w=1000">
+                <div class="paragraph-container">
+                    <p id="draconisText" data-en="42 Draconis b is a gas giant exoplanet that orbits a K-type star. Its mass is 3.88 Jupiters, it takes 479.1 days to complete one orbit of its star, and is 1.19 AU from its star. Its discovery was announced in 2008."
+                        data-ar="42 دراكونيس ب هو كوكب خارجي غازي يدور حول نجم من النوع K. كتلته تعادل 3.88 كتلة من كواكب المشتري، يستغرق 479.1 يومًا لاستكمال دورة واحدة حول نجمه، ويبعد 1.19 وحدة فلكية عن نجمه. تم الإعلان عن اكتشافه في عام 2008.">42 Draconis b is a gas giant exoplanet that orbits a K-type star. Its mass is 3.88 Jupiters, it takes 479.1 days to complete one orbit of its star, and is 1.19 AU from its star. Its discovery was announced in 2008.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-row">
+            <div class="image-container">
+                <h3 id="delphiniTitle" data-en="18 Delphini b" data-ar="18 دلفيني ب">18 Delphini b</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Planet_18_Delphini_b.png">
+                <div class="paragraph-container">
+                    <p id="delphiniText" data-en="18 Delphini b is a dense exoplanet, 249 light-years away in Delphinus. It orbits a yellow giant star, completing one orbit every 993 days. Discovered in 2008, it has a minimum mass of 10.3 Jupiter masses."
+                        data-ar="18 دلفيني ب هو كوكب خارجي كثيف، على بعد 249 سنة ضوئية في كوكبة الدلفين. يدور حول نجم أصفر ضخم، يستكمل دورة واحدة كل 993 يومًا. تم اكتشافه في عام 2008، ولديه كتلة دنيا تعادل 10.3 كتلة من كواكب المشتري.">18 Delphini b is a dense exoplanet, 249 light-years away in Delphinus. It orbits a yellow giant star, completing one orbit every 993 days. Discovered in 2008, it has a minimum mass of 10.3 Jupiter masses.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 id="virginisTitle" data-en="61 Virginis b" data-ar="61 فيرجينيس ب">61 Virginis b</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Artist_concept_61vir_b.png/1200px-Artist_concept_61vir_b.png">
+                <div class="paragraph-container">
+                    <p id="virginisText" data-en="61 Virginis b is a super-Earth, 5.1 times Earth's mass, orbiting a G-type star in Virgo. It's close to the star, 0.050201 AU away, with a slightly eccentric orbit (eccentricity 0.12)."
+                        data-ar="61 فيرجينيس ب هو كوكب فائق الأرض، بمثل 5.1 مرة من كتلة الأرض، يدور حول نجم من النوع G في برج العذراء. إنها قريبة من النجم، على بعد 0.050201 وحدة فلكية، بمدار غير منتظم قليلاً (استعراض 0.12).">61 Virginis b is a super-Earth, 5.1 times Earth's mass, orbiting a G-type star in Virgo. It's close to the star, 0.050201 AU away, with a slightly eccentric orbit (eccentricity 0.12).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+        function toggleLanguage() {
+        const htmlElement = document.documentElement;
+        const currentLanguage = htmlElement.lang;
+
+        if (currentLanguage === 'en') {
+            htmlElement.lang = 'ar';
+        } else {
+            htmlElement.lang = 'en';
+        }
+
+        updateContent();
+    }
+
+    function updateContent() {
+        const elements = document.querySelectorAll('[data-en], [data-ar]');
+
+        elements.forEach(element => {
+            const currentLanguage = document.documentElement.lang;
+            if (currentLanguage === 'ar') {
+                element.textContent = element.getAttribute('data-ar');
+            } else {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+    }
+
+    updateContent();
+</script>
+</body>
+</html>

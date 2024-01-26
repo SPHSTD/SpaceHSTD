@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+    .h3-line {
+            display: flex;
+            flex-direction: row;
+            width: 80%; 
+            margin-bottom: 140px; 
+        }
+.h3-container {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h3 {
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+            margin-left: 45%;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 10px;
+            width: 180px;
+            margin-left: 60px;
+            margin-right: 0%;
+        }
+        .image-container img {
+            width: 7cm; 
+            height: 7cm;
+            object-fit: cover; 
+            margin-top: 10px;
+        }
+       .paragraph-container {
+        text-align: center;
+        margin: 10px;
+        margin-left: 70px;
+      }
+      body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+         button {
+            margin-bottom: 20px;
+            align-self: flex-start;
+            margin-left: 4.3mm;
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+    </style>
+     <title data-en="Planets" data-ar="الكواكب">Planets</title>
+</head>
+<body>
+<h1 data-en="Planets:" data-ar="الكواكب:">Planets:</h1>
+<h2 data-en="there are eight Planets in our Solar System" data-ar="هناك ثمانية كواكب في نظامنا الشمسي">there are eight Planets in our Solar System</h2>
+<button onclick="toggleDarkMode()" data-en="Toggle Dark/light Mode" data-ar="تبديل الوضع الداكن / الخفيف">Toggle Dark/light Mode</button>
+<button onclick="toggleLanguage()" data-en="Toggle Language" data-ar="تبديل اللغة">Toggle Language</button>
+<div class="h3-line">
+    <div class="h3-container">
+        <!-- Mercury -->
+        <div class="image-container">
+            <h3 data-en="Mercury" data-ar="عطارد">Mercury</h3>
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJ6dWh1dTR5aGF3Zmk2Z3B6NzMwMnIxYWhmMTVoNjk3aDIzbzMwNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlO4V8iCRME3i0g/giphy.webp" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Mercury is the smallest planet, closest to the Sun. No thick air causes hot days and cold nights. The surface has craters and plains. Its odd orbit gives a unique connection with the Sun."
+                   data-ar="عطارد هو أصغر كوكب، الأقرب إلى الشمس. لا يوجد هواء سميك يسبب أيامًا حارة وليالي باردة. السطح به حفر وسهول. مداره الغريب يمنحه اتصالًا فريدًا مع الشمس.">Mercury content</p>
+            </div>
+        </div>
+
+        <!-- Venus -->
+        <div class="image-container">
+            <h3 data-en="Venus" data-ar="الزهرة">Venus</h3>
+            <img src="https://i.pinimg.com/originals/96/1d/b0/961db0b174a5e2cb12705c0fc798b3a0.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Venus, Earth's close neighbor, is hot due to thick clouds trapping heat. It lacks oceans, featuring volcanoes and plains. Slow rotation leads to long days and nights. Shining brightly, it's known as the 'Evening Star' or 'Morning Star'."
+                   data-ar="الزهرة، الجارة القريبة للأرض، حارة بسبب السحب الكثيفة التي تحبس الحرارة. تفتقر إلى محيطات، وتتميز بالبراكين والسهول. الدوران البطيء يؤدي إلى أيام وليالي طويلة. مشرقة بشكل لافت، وتعرف باسم 'النجمة المسائية' أو 'النجمة الصباحية'.">Venus content</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+      <!-- Earth and Mars -->
+<div class="h3-line">
+    <div class="h3-container">
+        <!-- Earth -->
+        <div class="image-container">
+            <h3 data-en="Earth" data-ar="الأرض">Earth</h3>
+            <img src="https://media2.giphy.com/media/mf8UbIDew7e8g/giphy.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Earth is our home, a blue and green planet with oceans and land. It has air we breathe and a sky with clouds. We live on continents and islands. Day and night happen as it spins, and it orbits the Sun, providing seasons. Many animals and plants call Earth home."
+                   data-ar="الأرض هي منزلنا، كوكب أزرق وأخضر بمحيطات وأرض. لديها هواء نتنفسه وسماء بها سحب. نعيش على القارات والجزر. النهار والليل يحدثان أثناء دورانها، وتدور حول الشمس، مما يوفر المواسم. العديد من الحيوانات والنباتات تعتبر الأرض منزلها.">Earth content</p>
+            </div>
+        </div>
+
+        <!-- Mars -->
+        <div class="image-container">
+            <h3 data-en="Mars" data-ar="المريخ">Mars</h3>
+            <img src="https://i.pinimg.com/originals/38/bc/56/38bc56565ead27975dadedaa937f6840.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Mars, the Red Planet, is smaller than Earth with rusty-colored soil. It has mountains and valleys, including the tallest volcano. Thin atmosphere and dusty winds. Polar ice caps change with seasons. Scientists explore Mars to learn about its past and potential for life."
+                   data-ar="المريخ، الكوكب الأحمر، أصغر من الأرض بتربة ذات لون صدئ. يحتوي على جبال ووديان، بما في ذلك أعلى بركان. غلاف جوي رقيق ورياح dusty. تتغير قبعات الجليد القطبية مع المواسم. يستكشف العلماء المريخ للتعرف على ماضيه وإمكانيات وجود الحياة.">Mars content</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Jupiter and Saturn -->
+<div class="h3-line">
+    <div class="h3-container">
+        <!-- Jupiter -->
+        <div class="image-container">
+            <h3 data-en="Jupiter" data-ar="المشتري">Jupiter</h3>
+            <img src="https://media0.giphy.com/media/s2uampOAMWksU/giphy.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Jupiter is the biggest planet, a gas giant with no solid surface. It has colorful stripes and a big red spot. Many moons orbit around it. Its strong gravity helps protect Earth. It's part of our solar system, far from the Sun, and we can see it shining at night."
+                   data-ar="المشتري هو أكبر كوكب، عملاق غازي بدون سطح صلب. لديه خطوط ملونة وبقعة حمراء كبيرة. العديد من الأقمار تدور حوله. جاذبيته القوية تساعد في حماية الأرض. إنه جزء من نظامنا الشمسي، بعيد عن الشمس، ويمكننا رؤيته يلمع في الليل.">Jupiter content</p>
+            </div>
+        </div>
+
+        <!-- Saturn -->
+        <div class="image-container">
+            <h3 data-en="Saturn" data-ar="زحل">Saturn</h3>
+            <img src="https://i.pinimg.com/originals/38/84/19/3884199363c2eec1c19feec9bae966a4.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Saturn is a big, beautiful planet with rings made of ice and rocks. It's far from Earth. It spins, and its days and nights are short. Saturn has many moons. It's a gas planet, not solid like Earth. People like to study it because of its unique rings."
+                   data-ar="زحل هو كوكب كبير وجميل بحلقات مكونة من الجليد والصخور. إنه بعيد عن الأرض. إنه يدور، وأيامه ولياليه قصيرة. زحل لديه العديد من الأقمار. إنه كوكب غازي، ليس صلبًا مثل الأرض. يحب الناس دراسته بسبب حلقاته الفريدة.">Saturn content</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Uranus and Neptune -->
+<div class="h3-line">
+    <div class="h3-container">
+        <!-- Uranus -->
+        <div class="image-container">
+            <h3 data-en="Uranus" data-ar="أورانوس">Uranus</h3>
+            <img src="https://i.makeagif.com/media/7-18-2015/xJcp1G.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Uranus is a distant planet with a bluish tint. It's big and gassy, but unlike gas giants, it's an 'ice giant.' It spins on its side, making unique seasons. Rings and moons orbit it. Uranus is cold and far from the Sun, taking a long time to complete its journey around."
+                   data-ar="أورانوس هو كوكب بعيد بلون أزرق. إنه كبير وغازي، ولكن على عكس العمالقة الغازية، إنه 'عملاق ثلج.' إنه يدور على جانبه، مما يجعل المواسم فريدة. الحلقات والأقمار تدور حوله. أورانوس بارد وبعيد عن الشمس، ما يستغرق وقتًا طويلاً لاستكمال رحلته حولها."
+                >Uranus content</p>
+            </div>
+        </div>
+
+        <!-- Neptune -->
+        <div class="image-container">
+            <h3 data-en="Neptune" data-ar="نبتون">Neptune</h3>
+            <img src="https://i.pinimg.com/originals/3c/96/11/3c961145db8f60b5a286f676e3822bf0.gif" width="180" height="200">
+            <div class="paragraph-container">
+                <p data-en="Neptune, a faraway planet, is big and blue. It's icy and windy with dark storms. Orbits the Sun far away. No solid surface, just gases. It has rings and many moons. Cold and distant, Neptune is one of the outer planets in our solar system."
+                   data-ar="نبتون، كوكب بعيد، كبير وأزرق. إنه مثلج وعاصف مع عواصف داكنة. يدور حول الشمس بعيدًا. لا يوجد سطح صلب، فقط غازات. لديها حلقات وعدد كبير من الأقمار. بارد وبعيد، نبتون هو واحد من الكواكب الخارجية في نظامنا الشمسي."
+                >Neptune content</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+        function toggleLanguage() {
+        const htmlElement = document.documentElement;
+        const currentLanguage = htmlElement.lang;
+
+        if (currentLanguage === 'en') {
+            htmlElement.lang = 'ar';
+        } else {
+            htmlElement.lang = 'en';
+        }
+
+        updateContent();
+    }
+
+    function updateContent() {
+        const elements = document.querySelectorAll('[data-en], [data-ar]');
+
+        elements.forEach(element => {
+            const currentLanguage = document.documentElement.lang;
+            if (currentLanguage === 'ar') {
+                element.textContent = element.getAttribute('data-ar');
+            } else {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+    }
+
+    updateContent();
+</script>
+</body>
+</html>

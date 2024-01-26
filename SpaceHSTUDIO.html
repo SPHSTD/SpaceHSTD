@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <title>SpaceHSTUDIO</title>
+    <style>
+      body {
+      	height: 100%;
+      	 margin: 0;
+         padding: 0;
+         overflow: hidden;
+         display: flex;
+         transition: background-color 0.5s, color 0.5s;
+       }
+
+ #left-content {
+            flex: 4;
+            padding: 20px;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+         #left-content h1 {
+            align-self: center;
+          }
+
+        #right-content {
+            flex: 7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        #right-content img {
+            max-width: 180vh;
+            max-height: 200%;
+            object-fit: contain;
+        }
+        body.dark-mode {
+            background-color: #000000;
+            color: white;
+        }
+         #toggleDarkMode {
+            margin-top: auto;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #807777;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            align-self: flex-start;
+        }
+         #left-content p {
+            margin-bottom: 0; 
+        }
+        .button-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+ #black-webpage-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #807777;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+        #black-webpage-link,
+        #toggleDarkMode {
+            margin-right: 10px;
+        }
+  </style>
+</head>
+<body>
+ <div id="left-content">
+    <a id="black-webpage-link" href="Home.htm" target="_blank">explore home page 👉</a>
+        <h1>Welcome to SpaceHSTUDIO</h1>
+        <h3 style="align-self: flex-start;">About SpaceHSTUDIO:</h3>
+        <p>Discover the cosmos with SpaceHSTUDIO—where art, tech, and science collide! 🚀 Explore planets, stars, and galaxies, all backed by solid science. 🌌 Got questions about space? We've got concise, accurate answers. 🌟 Join us for a reliable and captivating cosmic journey! 📚🌠</p>
+        <h3 style="align-self: flex-start;">contact:</h3>
+        <p style="align-self: flex-start;">Email: khalid.alyarubi1908@gmail.com</p>
+        <p style="align-self: flex-start;">Instagram: khalidalyarubi15_</p>
+        <button id="toggleDarkMode">Toggle Light/Dark mode</button>
+    </div>
+      <div id="right-content">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a5972800-76cb-4582-924e-c09c991968ba/d8u5qyi-a0da024f-b6c6-4310-b393-e74f3e81fe25.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E1OTcyODAwLTc2Y2ItNDU4Mi05MjRlLWMwOWM5OTE5NjhiYVwvZDh1NXF5aS1hMGRhMDI0Zi1iNmM2LTQzMTAtYjM5My1lNzRmM2U4MWZlMjUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iO7VXqPk15C6riw25GKgCe0Dr68whBCq62Wd_reZhgw" alt="GIF"> </div>
+<script>
+        const body = document.body;
+        const toggleButton = document.getElementById('toggleDarkMode');
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+	</body>
+</html>
