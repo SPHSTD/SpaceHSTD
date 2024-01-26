@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+
+            background-color: #ffffff;
+            color: #000000;
+            margin-bottom: 100px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+         button {
+            margin-bottom: 20px;
+            align-self: flex-start;
+            margin-left: 4.3mm;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+      h2 {
+    text-align: left;
+    margin-top: 0; 
+    margin-left: 20px; 
+}
+.h3-line {
+            display: flex;
+            flex-direction: row;
+            width: 100%; 
+            margin-bottom: 130px; 
+        }
+.h3-container {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h3 {
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 10px;
+            width: 180px;
+            margin-left: 40px;
+            margin-right: 60px;
+        }
+        .image-container img {
+            width: 6cm; 
+            height: 6cm;
+            object-fit: cover; 
+            margin-top: 10px;
+        }
+       .paragraph-container {
+        text-align: center;
+        margin: 10px;
+      }
+      p {
+        text-align: justify;
+        margin: 0;
+        line-height: 1.2;
+        white-space: normal;
+      }
+      .indent {
+        margin-left: 20px;
+        display: block;
+      }
+      #darkModeImage {
+            transition: background-image 1s ease-in-out;
+        }
+       #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #black-webpage-link {
+            display: inline-block;
+            padding: 5px;
+            background-color: #678981;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px
+        }
+        #black-webpage-link.move-right {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+        .language-buttons button {
+            margin-right: 10px;
+            background-color: #678981;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body[lang="ar"] {
+            direction: rtl;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+     <title data-translation-en="Home page" data-translation-ar="الصفحة الرئيسية">Home page</title>
+</head>
+<body>
+    <h1 data-translation-en="Welcome to home page" data-translation-ar="مرحبًا بك في الصفحة الرئيسية">Welcome to home page</h1>
+    <div class="language-buttons">
+        <button data-lang="en" data-translation-en="English" data-translation-ar="الإنجليزية">English</button>
+        <button data-lang="ar" data-translation-en="Arabic" data-translation-ar="عربى">Arabic</button>
+    </div>
+    <button id="toggleModeButton" data-translation-en="Toggle Light/Dark Mode" data-translation-ar="تبديل الوضع الفاتح / الداكن">Toggle Light/Dark Mode</button>
+    <h2 style="align-self: flex-start;" data-translation-en="Explore:" data-translation-ar="استكشاف:">Explore:</h2>
+    <div class="h3-line">
+        <div class="h3-container">
+            <div class="image-container">
+                <h3 data-translation-en="Planets" data-translation-ar="الكواكب">Planets</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Planet_collage_to_scale.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Planets.htm" target="_blank" class="move-right" data-translation-en="Explore more about Planets" data-translation-ar="استكشف المزيد حول الكواكب">Explore more about Planets</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-translation-en="Exoplanets" data-translation-ar="الكواكب الخارجية">Exoplanets</h3>
+                <img src="https://c4.wallpaperflare.com/wallpaper/664/112/851/space-galaxy-stars-exoplanet-wallpaper-preview.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Exoplanets.htm" target="_blank" class="move-right" data-translation-en="Explore more about Exoplanets" data-translation-ar="استكشف المزيد حول الكواكب الخارجية">Explore more about Exoplanets</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-translation-en="Moons" data-translation-ar="الأقمار">Moons</h3>
+                <img src="https://c02.purpledshub.com/uploads/sites/41/2018/08/top-moon-sranked-bf6310d.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Moons.htm" target="_blank" class="move-right" data-translation-en="Explore more about Moons" data-translation-ar="استكشف المزيد حول الأقمار">Explore more about Moons</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h3-line">
+        <div class="h3-container">
+            <div class="image-container">
+                <h3 data-translation-en="Stars" data-translation-ar="النجوم">Stars</h3>
+                <img src="https://cdn.britannica.com/38/111338-050-D23BE7C8/Stars-NGC-290-Hubble-Space-Telescope.jpg" alt="Stars Image" width="180" height="200">
+                <a id="black-webpage-link" href="Stars.htm" target="_blank" class="move-right" data-translation-en="Explore more about Stars" data-translation-ar="استكشف المزيد حول النجوم">Explore more about Stars</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-translation-en="Galaxies" data-translation-ar="المجرات">Galaxies</h3>
+                <img src="https://i.pinimg.com/originals/35/39/20/3539203beae868a13ec84a19b349eafa.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Galaxies.htm" target="_blank" class="move-right" data-translation-en="Explore more about Galaxies" data-translation-ar="استكشف المزيد حول المجرات">Explore more about Galaxies</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-translation-en="Dark matter/energy" data-translation-ar="المادة / الطاقة الداكنة">Dark matter/energy</h3>
+                <img src="https://3.bp.blogspot.com/-X6lr2i5pR1I/XGqhb3XVowI/AAAAAAAAEfo/bg41NvCxB5khQv46DVQTbV-Ozrl4ALNqwCLcBGAs/s1600/1024px-Barnard_68.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Dark matterenergy.htm" target="_blank" class="move-right" data-translation-en="Explore more about Dark matter/energy" data-translation-ar="استكشف المزيد حول المادة / الطاقة الداكنة">Explore more about Dark matter/energy</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h3-line" style="margin-bottom: 100px;">
+        <div class="h3-container">
+            <div class="image-container">
+                <h3 data-translation-en="Supernova" data-translation-ar="السوبرنوفا">Supernova</h3>
+                <img src="https://c1.wallpaperflare.com/preview/1012/540/915/crab-nebula-supernova-remnant-supernova-pulsar-wind-fog.jpg" width="180" height="200">
+                <div class="paragraph-container">
+                    <a id="black-webpage-link" href="Supernovas.htm" target="_blank" class="move-right" data-translation-en="Explore more about Supernovas" data-translation-ar="استكشف المزيد حول السوبرنوفا">Explore more about Supernovas</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-translation-en="Planetary nebulae" data-translation-ar="السديم الكوكبي">Planetary nebulae</h3>
+                <img src="https://cdn.britannica.com/70/94870-050-2ECAB6AD/Cats-Eye-nebula.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Planetary nebulaes.htm" target="_blank" class="move-right" data-translation-en="Explore more about Planetary nebulaes" data-translation-ar="استكشف المزيد حول السديم الكوكبي">Explore more about Planetary nebulaes</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-translation-en="Black Hole" data-translation-ar="الثقب الأسود">Black Hole</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/A_view_of_the_M87_supermassive_black_hole_in_polarised_light.tif/lossy-page1-220px-A_view_of_the_M87_supermassive_black_hole_in_polarised_light.tif.jpg" width="180" height="200">
+                <a id="black-webpage-link" href="Black Hole.htm" target="_blank" class="move-right" data-translation-en="Explore more about Black Hole" data-translation-ar="استكشف المزيد حول الثقب الأسود">Explore more about Black Hole</a>
+                <div class="paragraph-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       const body = document.body;
+    const toggleButton = document.getElementById("toggleModeButton");
+    const languageButtons = document.querySelectorAll(".language-buttons button");
+
+    function toggleDarkMode() {
+        body.classList.toggle("dark-mode");
+        const darkModeImage = document.getElementById("darkModeImage");
+
+        if (body.classList.contains("dark-mode")) {
+            setTimeout(() => {
+                darkModeImage.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/A_view_of_the_M87_supermassive_black_hole_in_polarised_light.tif/lossy-page1-220px-A_view_of_the_M87_supermassive_black_hole_in_polarised_light.tif.jpg";
+            }, 5000);
+        }
+    }
+
+    function changeLanguage(language) {
+      body.setAttribute("lang", language);
+            updateContent(language);
+        }
+
+    function updateContent(language) {
+        // Update content based on the selected language
+        const translationElements = document.querySelectorAll("[data-translation-" + language + "]");
+        translationElements.forEach(element => {
+            element.textContent = element.getAttribute("data-translation-" + language);
+        });
+    }
+
+    toggleButton.addEventListener("click", function () {
+        toggleDarkMode();
+        localStorage.setItem("dark-mode", body.classList.contains("dark-mode"));
+    });
+
+    languageButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const language = this.getAttribute("data-lang");
+            changeLanguage(language);
+        });
+    });
+
+    const isDarkMode = localStorage.getItem("dark-mode");
+    if (isDarkMode === "true") {
+        toggleDarkMode(); 
+    }
+    </script>
+</body>
+</html>
