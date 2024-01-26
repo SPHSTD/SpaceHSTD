@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .h3-line {
+            display: flex;
+            flex-direction: column;
+            width: 80%; 
+            margin-bottom: 120px; 
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 6cm; 
+        }
+        img {
+            width: 10cm;
+            height: 10cm;
+            object-fit: cover;
+        }
+        h2 {
+            margin-right: 20%;
+        }
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+        .paragraph-container {
+            text-align: center;
+            margin: 10px;
+            margin-left: 28%;
+            margin-right: 30%;
+        }
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        button {
+            margin-bottom: 20px;
+            align-self: flex-start;
+            margin-left: 4.3mm;
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        .h3-inline {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+       <h1 data-en="Galaxies" data-ar="المجرات">Galaxies</h1>
+    <h2 data-en="Galaxies consist of stars, planets, and vast clouds of gas and dust, all bound together by gravity." data-ar="تتكون المجرات من النجوم والكواكب وسحب ضخمة من الغاز والغبار، متماسكة جميعها بفعل الجاذبية.">Galaxies consist of stars, planets, and vast clouds of gas and dust, all bound together by gravity.</h2>
+    <button onclick="toggleDarkMode()" data-en="Toggle Dark/light Mode" data-ar="تبديل الوضع الداكن / الخفيف">Toggle Dark/light Mode</button>
+    <button onclick="toggleLanguage()" data-en="Toggle Language" data-ar="تبديل اللغة">Toggle Language</button>
+    <div class="image-row">
+            <div class="h3-inline">
+                <div class="image-container">
+                    <h3 data-en="Milky Way" data-ar="درب التبانة">Milky Way</h3>
+                    <img src="https://images.ctfassets.net/cnu0m8re1exe/76iARqWFwf5VQeHcy7FsYB/75246efbd9ac79410b75b5c0211723ba/shutterstock_738535111.jpg">
+                    <div class="paragraph-container">
+                    <p data-en="The Milky Way is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye." data-ar="درب التبانة هو المجرة التي تتضمن النظام الشمسي، والاسم يصف مظهر المجرة من الأرض: فهو حزام ضبابي من الضوء يظهر في السماء الليلية ناتج عن نجوم لا يمكن تمييزها فرديًا بالعين المجردة.">The Milky Way is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <h3 data-en="Andromeda Galaxy" data-ar="مجرة أندروميدا">Andromeda Galaxy</h3>
+                <img src="https://w0.peakpx.com/wallpaper/501/436/HD-wallpaper-andromeda-galaxy-abstract-nature.jpg">
+                <div class="paragraph-container">
+                    <p data-en="The Andromeda Galaxy is a barred spiral galaxy and is the nearest major galaxy to the Milky Way. It was originally named the Andromeda Nebula and is cataloged as Messier 31, M31, and NGC 224. Andromeda has a diameter of about 46.56 kiloparsecs and is approximately 765 kpc from Earth." data-ar="مجرة أندروميدا هي مجرة حلزونية مشدودة وهي أقرب مجرة رئيسية إلى درب التبانة. كانت في الأصل تسمى سديم أندروميدا وتم تصنيفها كمسييه 31، M31، و NGC 224. أندروميدا لديها قطر يبلغ حوالي 46.56 كيلوبارسيك وتقع على بُعد حوالي 765 كيلوبارسيك من الأرض.">The Andromeda Galaxy is a barred spiral galaxy and is the nearest major galaxy to the Milky Way. It was originally named the Andromeda Nebula and is cataloged as Messier 31, M31, and NGC 224. Andromeda has a diameter of about 46.56 kiloparsecs and is approximately 765 kpc from Earth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-row">
+            <div class="h3-inline">
+                <div class="image-container">
+                    <h3 data-en="Whirlpool" data-ar="مجرة الدوامة">Whirlpool</h3>
+                    <img src="https://cdn.astrobin.com/thumbs/n6CngYBLY9y-_1824x0_4bDUqp1O.jpg">
+                    <div class="paragraph-container">
+                    <p data-en="This is a spiral galaxy in the constellation Canes Venatici with a Seyfert 2 active galactic nucleus. It's the first galaxy classified as a spiral galaxy, located 32 million light-years away and measuring 109,000 light-years in diameter." data-ar="هذه مجرة حلزونية في كوكبة كينيس فيناتيسي مع نواة كونية فعّالة من النوع سيفيرت 2. إنها أول مجرة تم تصنيفها كمجرة حلزونية، تقع على بُعد 32 مليون سنة ضوئية وتقيس 109,000 سنة ضوئية في القطر.">This is a spiral galaxy in the constellation Canes Venatici with a Seyfert 2 active galactic nucleus. It's the first galaxy classified as a spiral galaxy, located 32 million light-years away and measuring 109,000 light-years in diameter.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                    <h3 data-en="Black Eye Galaxy" data-ar="مجرة العين السوداء">Black Eye Galaxy</h3>
+                    <img src="https://cdn.shopify.com/s/files/1/0742/7719/1954/files/black-eye-galaxy-2_1024x1024.jpg?v=1682601170">
+                    <div class="paragraph-container">
+                    <p data-en="The Black Eye Galaxy is a spiral galaxy located 17 million light-years away in the constellation Coma Berenices. Discovered independently by Edward Pigott and Johann Elert Bode in 1779, as well as by Charles Messier the following year." data-ar="مجرة العين السوداء هي مجرة حلزونية تقع على بُعد 17 مليون سنة ضوئية في كوكبة كوما بيرينيسيس. اكتشفها إدوارد بيجوت ويوهان إليرت بود عام 1779، بالإضافة إلى تشارلز مسييه في العام التالي.">The Black Eye Galaxy is a spiral galaxy located 17 million light-years away in the constellation Coma Berenices. Discovered independently by Edward Pigott and Johann Elert Bode in 1779, as well as by Charles Messier the following year.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+            <div class="h3-inline">
+                <div class="image-container">
+                    <h3 data-en="Cartwheel Galaxy" data-ar="مجرة الدوار">Cartwheel Galaxy</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Cartwheel_Galaxy_JWST_NIRCam%2BMIRI_Full_Res.png/1200px-Cartwheel_Galaxy_JWST_NIRCam%2BMIRI_Full_Res.png">
+                    <div class="paragraph-container">
+                    <p data-en="The Cartwheel Galaxy is a lenticular ring galaxy about 500 million light-years away in the constellation Sculptor. It has a D₂₅ isophotal diameter of 44.23 kiloparsecs, and a mass of about 2.9–4.8 × 10⁹ solar masses; its outer ring has a circular velocity of 217 km/s. It was discovered by Fritz Zwicky in 1941." data-ar="مجرة الدوار هي مجرة حلقية عدسية تقع على بُعد حوالي 500 مليون سنة ضوئية في كوكبة النحات. لديها قطر عظمي إيزوفوتال (D₂₅) يبلغ 44.23 كيلوبارسيك، وكتلة تبلغ حوالي 2.9–4.8 × 10⁹ كتلة شمسية. لديها سرعة دوران دائرية للحلقة الخارجية تبلغ 217 كيلومترًا في الثانية. تم اكتشافها بواسطة فريتز زفيكي في عام 1941.">The Cartwheel Galaxy is a lenticular ring galaxy about 500 million light-years away in the constellation Sculptor. It has a D₂₅ isophotal diameter of 44.23 kiloparsecs, and a mass of about 2.9–4.8 × 10⁹ solar masses; its outer ring has a circular velocity of 217 km/s. It was discovered by Fritz Zwicky in 1941.</p>
+                </div>
+            </div>
+          <div class="image-container">
+                <h3 data-en="Cigar Galaxy" data-ar="مجرة السيجار">Cigar Galaxy</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/M82_HST_ACS_2006-14-a-large_web.jpg/1200px-M82_HST_ACS_2006-14-a-large_web.jpg">
+                <div class="paragraph-container">
+                    <p data-en="Cigar Galaxy, also known as the Messier 82 galaxy, is a starburst galaxy situated about 12 million light-years away in the Ursa Major constellation. It's the second-largest member of the M81 Group, with an isophotal diameter of 12.52 kiloparsecs." data-ar="مجرة السيجار، المعروفة أيضًا باسم مجرة مسييه 82، هي مجرة انفجار النجوم وتقع على بُعد حوالي 12 مليون سنة ضوئية في كوكبة الدب الأكبر. إنها العضو الثاني بحجم في مجموعة M81، بقطر إيزوفوتال يبلغ 12.52 كيلوبارسيك.">Cigar Galaxy, also known as the Messier 82 galaxy, is a starburst galaxy situated about 12 million light-years away in the Ursa Major constellation. It's the second-largest member of the M81 Group, with an isophotal diameter of 12.52 kiloparsecs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+        function toggleLanguage() {
+        const htmlElement = document.documentElement;
+        const currentLanguage = htmlElement.lang;
+
+        if (currentLanguage === 'en') {
+            htmlElement.lang = 'ar';
+        } else {
+            htmlElement.lang = 'en';
+        }
+
+        updateContent();
+    }
+
+    function updateContent() {
+        const elements = document.querySelectorAll('[data-en], [data-ar]');
+
+        elements.forEach(element => {
+            const currentLanguage = document.documentElement.lang;
+            if (currentLanguage === 'ar') {
+                element.textContent = element.getAttribute('data-ar');
+            } else {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+    }
+
+    updateContent();
+</script>
+</body>
+</html>
